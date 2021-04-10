@@ -1,0 +1,57 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0068FF;
+    overflow: hidden;
+}
+
+.persp-text {
+    color: #fff;
+    font-family: arial,sans-serif;
+    font-size:  3rem;
+    font-weight:800;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+}
+
+.persp-line{
+    height:50px;
+    overflow: hidden;
+    position: relative;
+}
+
+p{
+    margin:0;
+    height: 50px;
+    line-height: 50px;
+    transition: all .5s ease-in-out;
+}
+
+.persp-line:nth-child(odd){
+    transform: skew(60deg, -30deg)scaleY(0.667);
+}
+.persp-line:nth-child(even){
+    transform: skew(0deg, -30deg) scaleY(1.333);
+}
+
+/* MOVEMENT ANIMATION */
+.persp-text:hover p{
+    transform: translate(0,-50px);
+}
+
+.persp-line:nth-child(1){
+    left: 29px;
+}
+.persp-line:nth-child(2){
+    left: 58px;
+}
+.persp-line:nth-child(3){
+    left: 87px;
+}
+.persp-line:nth-child(4){
+    left: 116px;
+}
+.persp-line:nth-child(4){
+    left: 145px;
+}
